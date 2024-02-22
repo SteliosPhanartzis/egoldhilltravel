@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+body {
+	background-repeat: no-repeat;
+    background-position: top, center;
+    overflow-x: hidden;
+    background-color: #fff5e6;
+	font-family: Century Gothic;
+}
+a, body, p {
+	font-size: 12px;
+	color:#fff;
+	/* color: #333; */
+}
+a:hover{
+	color: #cff;
+}
+.overlay-text {
+	font-size: 30px;
+	top: 0;
+	left: 0;
+	right: 0;
+	margin: 0 10vw;
+	padding: 45vh 10vw;
+	text-align: left;
+	z-index: 500;
+}
+.overlay-tint {
+	background-color: rgba(0,0,0,0.2);
+	top: 0;
+	left: 0;
+	right: 0;
+	width: 100vw;
+	height: 100vh;
+	z-index: 10;
+}
+.carousel-inner {
+	width: 100vw;
+	height: 100vh;
+	overflow-y: hidden;
+}
+.carousel-inner img {
+	min-width: 100%;
+	overflow-y: hidden;
+	height: 100vh;
+	z-index: -1;
+	object-fit: cover;
+}
+.carousel-control-prev, .carousel-control-next, .carousel-indicators {
+	z-index: 100;
+}
+.carousel-indicators {
+	padding-bottom: 8vh;
+}
+.fontIcon {
+	height: 40px;
+	width: 40px;
+	/* background-color:black; */
+	border-radius: 15px;
+}
+.logo {
+	position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+	padding: 1vh;
+	z-index: 1000;
+	width: 100vw;
+  /* background: linear-gradient(90deg,rgba(0,0,0,0.75),rgba(255,255,255,0.5)); */
+	background-color: rgba(100,100,100,0.65);
+}
+.logo > div {
+  flex: 0.8;
+}
+.logo > div ~ div {
+  flex: 0.2;
+}
+.logo div img {
+  justify-self: self-end;
+  margin: 2px;
+  height: 20px;
+}
+.logo div img:nth-of-type(2) {
+  height: 25px;
+}
+.right-align {
+  justify-content: right;
+  justify-items: right;
+}
+.logo-text {
+	font-family: 'Shadows Into Light', cursive;
+	font-style: italic;
+	font-kerning: 2;
+	color: #fff;
+	font-size: 20px;
+}
+.logo-text:hover {
+	color: #fff;
+}
+.nav-image {
+  height: 20px;
+  width: auto;
+}
+footer {
+	position: absolute;
+	top: 94vh;
+	display: inline-flex;
+	height: 6vh;
+	justify-content: space-between;
+	width: 100vw;
+	vertical-align: middle;
+	padding: 2vh;
+	margin: 0;
+	text-align: center;
+	z-index: 1000;
+	background-color: rgba(100,100,100,0.65);
+  /* rgba(0,0,0,0.75); */
+}
+/* .footer-text {
+  color: black;
+} */
+footer div {
+	text-align: center;
+	width: 33vw;
+}
